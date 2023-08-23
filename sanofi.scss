@@ -1,22 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.cdnfonts.com/css/amazon-ember');
 
-
-// @mixin text {
-//   margin: 0;
-//   padding: 0;
-//   line-height: inherit;
-//   color: inherit;
-//   font-family: inherit;
-//   font-weight: inherit;
-// }
-
-// @mixin img {
-//   max-width: 100%;
-//   display: block;
-//   margin: 0 auto;
-// }
-
 @keyframes slidedown {
   from {
     opacity: 0.3;
@@ -75,7 +59,9 @@ $secondary-color: #e4022e;
 $text: #fff;
 $text-black: #000;
 $fs-base: 16px;
-$fs-figure-title: 1.2rem;
+$fs-base--m: 12px;
+$fs-figure-title: calc(1.2 * $fs-base);
+$fs-figure-title--m: calc(1.2 * $fs-base--m);
 $fs-section-title: 1.9rem;
 $fs-section-subtitle: 1.3rem;
 
@@ -86,7 +72,10 @@ $fs-section-subtitle: 1.3rem;
 
 #es-rc #es-rc-content {
   font-family: $regular;
-  font-size: $fs-base;
+  font-size: $fs-base--m;
+  @media (min-width: 768px) {
+    font-size: $fs-base;
+  }
   font-weight: 300;
   line-height: 1.2;
   max-width: 992px;
@@ -121,7 +110,6 @@ $fs-section-subtitle: 1.3rem;
   }
 
   .es-kv {
-
     &__container {
       padding: 0;
       min-height: 350px;
@@ -202,16 +190,16 @@ $fs-section-subtitle: 1.3rem;
 
   .es-features {
     font-family: $Ember;
-
+    padding-inline: 0.5rem;
     &__title {
-
-      font-size: 20px;
+      font-size: $fs-figure-title--m;
+      font-weight: 900;
       color: $text-black;
       max-width: 210px;
     }
 
     &__desc {
-      font-size: 16px;
+      font-size: $fs-base--m;
       font-weight: 500;
       color: $text-black;
       max-width: 210px;

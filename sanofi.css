@@ -42,13 +42,18 @@
 
 #es-rc #es-rc-content {
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 1.2;
   max-width: 992px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content {
+    font-size: 16px;
+  }
 }
 #es-rc #es-rc-content .es-mobile-break {
   display: block;
@@ -151,14 +156,16 @@
 }
 #es-rc #es-rc-content .es-features {
   font-family: "Amazon Ember", sans-serif;
+  padding-inline: 0.5rem;
 }
 #es-rc #es-rc-content .es-features__title {
-  font-size: 20px;
+  font-size: 14.4px;
+  font-weight: 900;
   color: #000;
   max-width: 210px;
 }
 #es-rc #es-rc-content .es-features__desc {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   color: #000;
   max-width: 210px;
