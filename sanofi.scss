@@ -380,28 +380,35 @@ $fw-black: 900;
       -webkit-box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
       -moz-box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
       box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
+
       @media (min-width: 992px) {
         font-size: calc(1.25 * $fs-base);
       }
+
       &--row {
         display: grid;
         grid-template-columns: 42% 1fr;
         padding: 1rem;
+
         &:nth-of-type(2n) {
           background-color: #bad45b;
         }
+
         &:last-of-type {
           border-radius: 0 0 15px 15px;
         }
       }
     }
+
     &__bold {
       font-weight: $fw-bold;
     }
+
     &__textUnderBox {
       font-size: $fs-base;
       color: $text;
     }
+
     &__box {
       padding: 0;
       background-color: $main-color;
@@ -411,6 +418,7 @@ $fw-black: 900;
       -moz-box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
       box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
     }
+
     &__figure {
       display: flex;
       flex-direction: column;
@@ -420,34 +428,42 @@ $fw-black: 900;
       font-size: $fs-base;
       font-family: $Ember;
       padding: 1rem;
+
       @media (min-width: 992px) {
         font-size: calc(1.25 * $fs-base);
       }
+
       img {
         max-height: 130px;
+
         @media (min-width: 992px) {
           max-height: 250px;
         }
       }
     }
+
     &__name {
       text-align: center;
       color: $text;
       font-size: calc(1.3 * $fs-base);
       margin-top: 10px;
+
       @media (min-width: 992px) {
         font-size: calc(1.625 * $fs-base);
       }
     }
+
     &__description {
       color: $text-black;
       margin-block: 7px;
+
       @media (min-width: 992px) {
         max-width: 50%;
         margin: auto;
         margin-bottom: 10px;
       }
     }
+
     &__title {
       font-family: $title;
       font-size: $fs-section-title;
@@ -457,72 +473,20 @@ $fw-black: 900;
     }
   }
 
-  .es-video {
-    margin: 0 auto 64px;
-    width: 100%;
-    position: relative;
-    background-color: $main-color;
-
-    &__container {
-      margin: 0 auto;
-      width: 100%;
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-    }
-
-    &__iframe {
-      border: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-
-    &__text {
-      text-align: center;
-      color: $text;
-      padding: 0 10px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin: 0 auto 10px;
-      font-size: 38px;
-      font-family: $title;
-      line-height: 1.2;
-
-      p {
-        // margin: 10px;
-        letter-spacing: 1px;
-      }
-
-      &--green {
-        color: $main-color--1;
-      }
-    }
-  }
 
   .es-cross {
+    font-family: $Ember;
+
     &__title {
       width: 100%;
-      text-align: center;
     }
 
     &__text {
-      text-align: center;
-      color: $main-color--1;
-      padding: 0 10px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin: 0 auto 10px;
-      font-size: 38px;
       font-family: $title;
-      line-height: 1.3;
-
-      p {
-        letter-spacing: 1px;
-      }
+      font-size: $fs-section-title;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+      color: $main-color--1;
     }
 
     &__badge {
@@ -540,8 +504,9 @@ $fw-black: 900;
     }
 
     &__head {
-      font-size: 20px;
+      font-size: calc(1.67 * $fs-base);
       font-weight: 800;
+      color: $main-color--1;
     }
 
     &__image {
@@ -556,6 +521,7 @@ $fw-black: 900;
       padding: 0;
       margin: 0;
       border-color: transparent;
+      font-size: $fs-base;
     }
 
     &__bordered-1 {
@@ -577,7 +543,7 @@ $fw-black: 900;
       border: none;
       min-width: 150px;
       color: $text-black;
-      font-size: 14px;
+      //font-size: 14px;
       font-weight: 500;
     }
 
@@ -586,7 +552,7 @@ $fw-black: 900;
       border: none;
       min-width: 110px;
       color: $main-color--1;
-      font-size: 14px;
+      //font-size: 14px;
       font-weight: 500;
     }
   }
@@ -596,34 +562,27 @@ $fw-black: 900;
 
     &__title {
       width: 100%;
-      text-align: center;
     }
 
     &__text {
-      text-align: center;
-      color: $main-color--2;
-      padding: 0 10px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin: 0 auto 10px;
-      font-size: 37px;
-      border-radius: 5px;
       font-family: $title;
-      line-height: 1.3;
-
-      p {
-        letter-spacing: 1px;
-      }
+      font-weight: $fw-bold;
+      font-size: $fs-section-title;
+      color: $main-color--2;
+      text-transform: uppercase;
     }
 
     &__text1 {
-      font-size: 18px;
+      font-size: $fs-base;
       color: $main-color--1;
-      font-weight: 300;
+      margin-bottom: 0;
+      @media (min-width: 992px) {
+        padding-inline: 5rem;
+      }
     }
 
     &__subtitle {
-      font-size: 18px;
+      font-size: $fs-base;
       color: $main-color--2;
       font-weight: 700;
       max-width: 360px;
@@ -635,72 +594,55 @@ $fw-black: 900;
       color: $text;
       width: max-content;
       padding: 5px 10px;
-      font-weight: 500;
+      font-weight: $fw-bold;
       margin-bottom: 10px;
-      font-size: 20px;
-      border-radius: 5px;
+      font-size: 16px;
+      border-radius: 99px;
       line-height: 1.3;
       margin: 0 auto 10px;
       background-color: $main-color--2;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        background-color: #FFF;
+        color: $main-color--2;
+        outline: 3px solid $main-color--2;
+      }
     }
   }
 
   .es-footer {
+    font-family: $Ember;
+    
     &__text {
       color: $text-black;
-      font-size: 14px;
-      font-weight: 500;
-
+      font-size: $fs-base;
+      font-weight: 400;
+      
       &--1 {
         font-size: 12px;
         white-space: nowrap;
+        color: $main-color--1;
+        font-weight: $fw-bold;
       }
 
       &--2 {
-        font-weight: 700;
+        font-weight: $fw-bold;
       }
 
       &--3 {
-        font-size: 32px;
-        font-weight: 700;
+        font-size: $fs-section-title;
+        font-weight: $fw-bold;
         color: $main-color--2;
       }
 
-      &--italic {
-        font-style: italic;
-      }
     }
-  }
-}
-
-.contents-25-icon {
-  display: block;
-  width: 50%;
-  padding: 5%;
-  margin: 1em auto auto;
-  aspect-ratio: 1;
-  border-radius: 2000px;
-}
-
-
-
-
-@media (min-width:576px) {
-
-
-  .es-footer {
-    &__text {
-      &--1 {
-        font-size: 14px;
-      }
+    ol {
+      padding-left: 1rem;
     }
   }
 }
 
 @media (min-width:768px) {
-
-
-
   .es-cross {
     &__image {
       max-height: 200px;
@@ -711,31 +653,4 @@ $fw-black: 900;
     }
   }
 
-  .es-articles {
-    &__text {
-      font-size: 38px;
-    }
-  }
-
-
-}
-
-@media (min-width:992px) {
-  .es-mobile-break {
-    display: none;
-  }
-
-
-
-  .es-cross {
-    &__articles {
-      &:hover {
-        background-color: $text-black;
-      }
-    }
-  }
-
-  .contents-25-icon {
-    width: 10%;
-  }
 }
