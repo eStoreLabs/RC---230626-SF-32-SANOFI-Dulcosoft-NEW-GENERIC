@@ -156,13 +156,28 @@
 }
 #es-rc #es-rc-content .es-features {
   font-family: "Amazon Ember", sans-serif;
-  padding-inline: 0.5rem;
+}
+#es-rc #es-rc-content .es-features__box {
+  padding-inline: 0.75rem;
 }
 #es-rc #es-rc-content .es-features__title {
   font-size: 14.4px;
   font-weight: 900;
   color: #000;
   max-width: 210px;
+}
+#es-rc #es-rc-content .es-features__title--4 {
+  height: 3.6em;
+}
+@media (min-width: 460px) {
+  #es-rc #es-rc-content .es-features__title--4 {
+    height: 2.4em;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-features__title {
+    height: 3.6em;
+  }
 }
 #es-rc #es-rc-content .es-features__desc {
   font-size: 12px;

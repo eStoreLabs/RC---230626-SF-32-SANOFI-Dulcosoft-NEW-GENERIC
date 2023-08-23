@@ -190,12 +190,25 @@ $fs-section-subtitle: 1.3rem;
 
   .es-features {
     font-family: $Ember;
-    padding-inline: 0.5rem;
+
+    &__box {
+      padding-inline: 0.75rem;
+
+    }
     &__title {
       font-size: $fs-figure-title--m;
       font-weight: 900;
       color: $text-black;
       max-width: 210px;
+      &--4 {
+        height: calc(1.2 * 3em);
+        @media (min-width: 460px) {
+          height: calc(1.2 * 2em);
+        }
+      }
+      @media (min-width: 768px) {
+        height: calc(1.2 * 3em);
+      }
     }
 
     &__desc {
@@ -204,6 +217,7 @@ $fs-section-subtitle: 1.3rem;
       color: $text-black;
       max-width: 210px;
     }
+    
   }
 
   .es-description {
