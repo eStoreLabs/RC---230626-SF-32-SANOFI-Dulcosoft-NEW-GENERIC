@@ -303,49 +303,104 @@
 }
 #es-rc #es-rc-content .es-why {
   background-color: #a1bd39;
+  font-family: "Amazon Ember", sans-serif;
 }
-#es-rc #es-rc-content .es-why__title {
-  width: 100%;
-  text-align: center;
+#es-rc #es-rc-content .es-why .es-features__title {
+  height: 2em;
 }
 #es-rc #es-rc-content .es-dose {
   background: rgb(0, 97, 78);
   background: linear-gradient(90deg, rgb(0, 97, 78) 0%, #007f67 100%);
 }
+#es-rc #es-rc-content .es-dose__grid {
+  display: flex;
+  flex-direction: column;
+  background-color: #a1bd39;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 2px 7px 15px 0px rgb(0, 99, 79);
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__grid {
+    font-size: calc(1.25 * clamp(12px, 10.864px + 0.316vw, 14px));
+  }
+}
+#es-rc #es-rc-content .es-dose__grid--row {
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  padding: 1rem;
+}
+#es-rc #es-rc-content .es-dose__grid--row:nth-of-type(2n) {
+  background-color: #bad45b;
+}
+#es-rc #es-rc-content .es-dose__grid--row:last-of-type {
+  border-radius: 0 0 15px 15px;
+}
+#es-rc #es-rc-content .es-dose__bold {
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-dose__textUnderBox {
+  font-size: clamp(12px, 10.864px + 0.316vw, 14px);
+  color: #fff;
+}
 #es-rc #es-rc-content .es-dose__box {
   padding: 0;
   background-color: #a1bd39;
   border-radius: 15px;
-}
-#es-rc #es-rc-content .es-dose__subtitleInBox {
   color: #fff;
-  padding: 20px 10px 10px;
-  font-weight: 700;
-  font-size: 23px;
-  font-family: "Montserrat";
-  line-height: 1.3;
+  box-shadow: 2px 7px 15px 0px rgb(0, 99, 79);
 }
-#es-rc #es-rc-content .es-dose__subtitleInBox--noTopPadding {
-  padding: 0 20px 10px;
+#es-rc #es-rc-content .es-dose__figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: clamp(12px, 10.864px + 0.316vw, 14px);
+  font-family: "Amazon Ember", sans-serif;
+  padding: 1rem;
 }
-#es-rc #es-rc-content .es-dose__subtitle {
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__figure {
+    font-size: calc(1.25 * clamp(12px, 10.864px + 0.316vw, 14px));
+  }
+}
+#es-rc #es-rc-content .es-dose__figure img {
+  max-height: 130px;
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__figure img {
+    max-height: 250px;
+  }
+}
+#es-rc #es-rc-content .es-dose__name {
+  text-align: center;
   color: #fff;
-  padding: 30px 20px 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 38px;
-  font-family: "Montserrat";
-  line-height: 1.3;
+  font-size: calc(1.3 * clamp(12px, 10.864px + 0.316vw, 14px));
+  margin-top: 10px;
 }
-#es-rc #es-rc-content .es-dose__text {
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__name {
+    font-size: calc(1.625 * clamp(12px, 10.864px + 0.316vw, 14px));
+  }
+}
+#es-rc #es-rc-content .es-dose__description {
   color: #000;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3;
+  margin-block: 7px;
 }
-#es-rc #es-rc-content .es-dose__textUnderBox {
-  font-size: 14px;
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__description {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+#es-rc #es-rc-content .es-dose__title {
+  font-family: "Montserrat";
+  font-size: clamp(22px, 12.88px + 2.532vw, 38px);
+  font-weight: 700;
   color: #fff;
+  text-transform: uppercase;
 }
 #es-rc #es-rc-content .es-video {
   margin: 0 auto 64px;
