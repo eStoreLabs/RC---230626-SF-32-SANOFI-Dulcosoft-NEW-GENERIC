@@ -263,13 +263,13 @@
   }
 }
 #es-rc #es-rc-content .es-relief__title {
-  color: #00604d;
-  font-size: 25px;
-  line-height: 1;
   font-family: "Montserrat";
+  font-size: clamp(22px, 12.88px + 2.532vw, 38px);
+  color: #00604d;
   font-weight: 900;
   text-transform: uppercase;
-  top: 40%;
+  line-height: 1;
+  top: 45%;
   left: 5%;
   transform: translateY(-50%);
 }
@@ -277,14 +277,29 @@
   font-style: italic;
 }
 #es-rc #es-rc-content .es-relief__title--middle {
-  font-size: 45px;
+  font-size: calc(3 * clamp(22px, 12.88px + 2.532vw, 38px));
   color: #a1bd39;
 }
 #es-rc #es-rc-content .es-relief__mobile {
   display: block;
 }
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-relief__mobile {
+    display: none;
+  }
+}
 #es-rc #es-rc-content .es-relief__desktop {
   display: none;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-relief__desktop {
+    display: block;
+    min-height: 234px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 72%;
+       object-position: 72%;
+  }
 }
 #es-rc #es-rc-content .es-why {
   background-color: #a1bd39;
@@ -520,29 +535,7 @@
   border-radius: 2000px;
 }
 
-@media (min-width: 440px) {
-  .es-relief__title {
-    font-size: 35px;
-    top: 48%;
-    transform: translateY(-50%);
-  }
-  .es-relief__title--middle {
-    font-size: 95px;
-  }
-}
 @media (min-width: 576px) {
-  .es-relief__title {
-    font-size: 22px;
-  }
-  .es-relief__title--middle {
-    font-size: 60px;
-  }
-  .es-relief__mobile {
-    display: none;
-  }
-  .es-relief__desktop {
-    display: block;
-  }
   .es-footer__text--1 {
     font-size: 14px;
   }
@@ -557,24 +550,10 @@
   .es-articles__text {
     font-size: 38px;
   }
-  .es-relief__title {
-    top: 40%;
-    font-size: 25px;
-  }
-  .es-relief__title--middle {
-    font-size: 70px;
-  }
 }
 @media (min-width: 992px) {
   .es-mobile-break {
     display: none;
-  }
-  .es-relief__title {
-    top: 48%;
-    font-size: 35px;
-  }
-  .es-relief__title--middle {
-    font-size: 95px;
   }
   .es-cross__articles:hover {
     background-color: #000;
