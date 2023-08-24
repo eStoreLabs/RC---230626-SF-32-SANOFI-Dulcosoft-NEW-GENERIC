@@ -209,8 +209,9 @@
   max-width: 210px;
 }
 #es-rc #es-rc-content .es-description {
-  background: rgb(0, 97, 78);
-  background: linear-gradient(90deg, rgb(0, 97, 78) 0%, #007f67 100%);
+  background: rgb(0, 90, 70);
+  background: linear-gradient(90deg, rgb(0, 90, 70) 12%, rgb(0, 130, 102) 47%, rgb(0, 118, 92) 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005a46",endColorstr="#00765c",GradientType=1);
 }
 #es-rc #es-rc-content .es-description__text {
   font-family: "Montserrat";
@@ -325,16 +326,18 @@
   height: 2em;
 }
 #es-rc #es-rc-content .es-dose {
-  background: rgb(0, 97, 78);
-  background: linear-gradient(90deg, rgb(0, 97, 78) 0%, #007f67 100%);
+  background: rgb(0, 90, 70);
+  background: linear-gradient(90deg, rgb(0, 90, 70) 12%, rgb(0, 130, 102) 47%, rgb(0, 118, 92) 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005a46",endColorstr="#00765c",GradientType=1);
 }
 #es-rc #es-rc-content .es-dose__grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
   background-color: #a1bd39;
   border-radius: 15px;
   color: #fff;
   box-shadow: 2px 7px 15px 0px rgb(0, 99, 79);
+  aspect-ratio: 13/12;
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-dose__grid {
@@ -345,6 +348,7 @@
   display: grid;
   grid-template-columns: 42% 1fr;
   padding: 1rem;
+  align-content: center;
 }
 #es-rc #es-rc-content .es-dose__grid--row:nth-of-type(2n) {
   background-color: #bad45b;
@@ -365,6 +369,14 @@
   border-radius: 15px;
   color: #fff;
   box-shadow: 2px 7px 15px 0px rgb(0, 99, 79);
+  aspect-ratio: 551/479;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-dose__box {
+    aspect-ratio: 13/12;
+  }
 }
 #es-rc #es-rc-content .es-dose__figure {
   display: flex;
@@ -382,11 +394,22 @@
   }
 }
 #es-rc #es-rc-content .es-dose__figure img {
-  max-height: 130px;
+  height: 250px;
+  aspect-ratio: 110/291;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-dose__figure img {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-dose__figure img {
+    height: 350px;
+  }
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-dose__figure img {
-    max-height: 250px;
+    height: 250px;
   }
 }
 #es-rc #es-rc-content .es-dose__name {
