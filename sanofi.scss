@@ -58,9 +58,10 @@ $secondary-color: #e4022e;
 
 $text: #fff;
 $text-black: #000;
-$fs-base: clamp(12px, 10.864px + 0.316vw, 14px);
+$fs-base: clamp(12px, 9.722px + 0.6329vw, 16px);
+
 $fs-figure-title--m: 1.2em;
-$fs-figure-title--d: 1.4em;
+$fs-figure-title--d: 1.3em;
 $fs-section-title: clamp(22px, 12.88px + 2.532vw, 38px);
 $fs-section-subtitle: clamp(18px, 13.04px + 1.377vw, 26.7px);
 $fw-bold: 700;
@@ -216,9 +217,9 @@ $fw-black: 900;
     &__box {
       padding-inline: 0.75rem;
 
-      @media (min-width: 992px) {
-        padding-inline: 1.5rem;
-      }
+      // @media (min-width: 992px) {
+      //   padding-inline: 1.5rem;
+      // }
     }
 
     &__title {
@@ -334,7 +335,7 @@ $fw-black: 900;
       font-size: $fs-base;
 
       @media (min-width: 992px) {
-        max-width: 81%;
+        max-width: 93%;
         margin: auto;
       }
     }
@@ -412,7 +413,7 @@ $fw-black: 900;
       
       aspect-ratio: 13 / 12;
       @media (min-width: 992px) {
-        font-size: calc(1.25 * $fs-base);
+        font-size: calc(1.15 * $fs-base);
       }
 
       &--row {
@@ -641,7 +642,8 @@ $fw-black: 900;
       color: $main-color--1;
       margin-bottom: 0;
       @media (min-width: 992px) {
-        padding-inline: 5rem;
+        padding-inline: 4rem;
+        font-size: calc(1.2 * $fs-base);
       }
     }
 
@@ -651,6 +653,9 @@ $fw-black: 900;
       font-weight: 700;
       max-width: 360px;
       margin: 0 auto;
+      @media (min-width: 992px) {
+        font-size: calc(1.2 * $fs-base);
+      }
     }
 
     &__button {
@@ -670,6 +675,10 @@ $fw-black: 900;
         background-color: #FFF;
         color: $main-color--2;
         outline: 3px solid $main-color--2;
+      }
+      @media (min-width: 992px) {
+        font-size: 20px;
+        padding: 7px 14px;
       }
     }
   }
