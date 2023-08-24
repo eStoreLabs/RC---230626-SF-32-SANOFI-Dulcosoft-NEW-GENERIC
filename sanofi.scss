@@ -599,6 +599,27 @@ $fw-black: 900;
       font-weight: 500;
     }
   }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: 	#E8E8E8;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $main-color--1;
+}
+
 
   .es-articles {
     background-color: $main-color;
