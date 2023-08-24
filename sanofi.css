@@ -209,9 +209,9 @@
   max-width: 210px;
 }
 #es-rc #es-rc-content .es-description {
-  background: rgb(0, 90, 70);
-  background: linear-gradient(90deg, rgb(0, 90, 70) 12%, rgb(0, 130, 102) 47%, rgb(0, 118, 92) 93%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005a46",endColorstr="#00765c",GradientType=1);
+  background: rgb(4, 94, 72);
+  background: linear-gradient(90deg, rgb(4, 94, 72) 22%, rgb(4, 132, 100) 40%, rgb(4, 109, 84) 67%, rgb(4, 124, 97) 95%, rgb(4, 116, 92) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48",endColorstr="#04745c",GradientType=1);
 }
 #es-rc #es-rc-content .es-description__text {
   font-family: "Montserrat";
@@ -326,9 +326,9 @@
   height: 2em;
 }
 #es-rc #es-rc-content .es-dose {
-  background: rgb(0, 90, 70);
-  background: linear-gradient(90deg, rgb(0, 90, 70) 12%, rgb(0, 130, 102) 47%, rgb(0, 118, 92) 93%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005a46",endColorstr="#00765c",GradientType=1);
+  background: rgb(4, 94, 72);
+  background: linear-gradient(90deg, rgb(4, 94, 72) 22%, rgb(4, 132, 100) 40%, rgb(4, 109, 84) 67%, rgb(4, 124, 97) 95%, rgb(4, 116, 92) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48",endColorstr="#04745c",GradientType=1);
 }
 #es-rc #es-rc-content .es-dose__grid {
   display: grid;
