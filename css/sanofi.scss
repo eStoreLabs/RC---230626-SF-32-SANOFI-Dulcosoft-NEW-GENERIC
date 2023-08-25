@@ -690,6 +690,7 @@ $fw-black: 900;
       color: $text-black;
       font-size: $fs-base;
       font-weight: 400;
+      line-height: 1.2;
       
       &--1 {
         font-size: 12px;
@@ -700,6 +701,7 @@ $fw-black: 900;
 
       &--2 {
         font-weight: $fw-bold;
+        
       }
 
       &--3 {
