@@ -554,11 +554,17 @@ $fw-black: 900;
     }
 
     &__image {
-      max-height: 150px;
+      max-height: 170px;
+      @media (min-width: 992px) {
+        max-height: 220px;
+      }
     }
 
     &__emptyImage {
-      height: 160px;
+      height: calc(170px + 0.5rem);
+      @media (min-width: 992px) {
+        height: calc(220px + 0.5rem);
+      }
     }
 
     & table {
@@ -598,6 +604,9 @@ $fw-black: 900;
       color: $main-color--1;
       //font-size: 14px;
       font-weight: 500;
+    }
+    .es-articles__button {
+      padding: 7px 21px;
     }
   }
   
@@ -662,7 +671,7 @@ $fw-black: 900;
       text-decoration: none;
       color: $text;
       width: max-content;
-      padding: 5px 10px;
+      padding: 7px 14px;
       font-weight: $fw-bold;
       margin-bottom: 10px;
       font-size: 16px;
@@ -717,15 +726,4 @@ $fw-black: 900;
   }
 }
 
-@media (min-width:768px) {
-  .es-cross {
-    &__image {
-      max-height: 200px;
-    }
 
-    &__emptyImage {
-      height: 214px;
-    }
-  }
-
-}
