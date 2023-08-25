@@ -502,9 +502,11 @@ $fw-black: 900;
       margin-block: 7px;
 
       @media (min-width: 992px) {
-        max-width: 50%;
+        max-width: 59%;
+        text-align: center;
         margin: auto;
         margin-bottom: 10px;
+        font-size: calc(1.2 * $fs-base);
       }
     }
 

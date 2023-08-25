@@ -424,9 +424,11 @@
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-dose__description {
-    max-width: 50%;
+    max-width: 59%;
+    text-align: center;
     margin: auto;
     margin-bottom: 10px;
+    font-size: calc(1.2 * clamp(12px, 9.722px + 0.6329vw, 16px));
   }
 }
 #es-rc #es-rc-content .es-dose__title {
