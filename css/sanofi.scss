@@ -231,11 +231,14 @@ $fw-black: 900;
       &--4 {
         height: calc(1.2 * 3em);
 
-        @media (min-width: 460px) {
+        @media (min-width: 485px) {
           height: calc(1.2 * 2em);
         }
+        @media (min-width: 521px) {
+          height: calc(1.2 * 3em);
+        }
       }
-
+      
       @media (min-width: 768px) {
         height: calc(1.2 * 3em);
 
@@ -245,8 +248,22 @@ $fw-black: 900;
         font-size: $fs-figure-title--d;
         margin-bottom: 16px;
       }
-    }
 
+    }
+    .title-top {
+      @media (min-width: 391px) {
+        height: calc(1.2 * 2em);
+      }
+      @media (min-width: 477px) {
+        height: calc(1.2 * 1em);
+      }
+      @media (min-width: 391px) {
+        height: calc(1.2 * 2em);
+      }
+      @media (min-width: 768px) {
+        height: calc(1.2 * 3em);
+      }
+    }
     &__desc {
       font-size: $fs-base;
       font-weight: 500;
