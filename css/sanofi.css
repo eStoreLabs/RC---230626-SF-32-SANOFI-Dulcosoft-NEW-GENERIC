@@ -357,11 +357,12 @@
   border-radius: 15px;
   color: #fff;
   box-shadow: 2px 7px 15px 0px rgb(0, 99, 79);
-  aspect-ratio: 13/12;
+  height: 340px;
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-dose__grid {
     font-size: calc(1.15 * clamp(12px, 9.722px + 0.6329vw, 16px));
+    height: 415px;
   }
 }
 #es-rc #es-rc-content .es-dose__grid--row {
@@ -395,7 +396,8 @@
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-dose__box {
-    aspect-ratio: 13/12;
+    aspect-ratio: unset;
+    height: 415px;
   }
 }
 #es-rc #es-rc-content .es-dose__figure {

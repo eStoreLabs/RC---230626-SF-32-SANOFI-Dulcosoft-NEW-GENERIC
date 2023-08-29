@@ -428,9 +428,11 @@ $fw-black: 900;
       -moz-box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
       box-shadow: 2px 7px 15px 0px rgba(0, 99, 79, 1);
       
-      aspect-ratio: 13 / 12;
+      height: 340px;
       @media (min-width: 992px) {
         font-size: calc(1.15 * $fs-base);
+        height: 415px;
+        
       }
 
       &--row {
@@ -469,7 +471,8 @@ $fw-black: 900;
       display: grid;
       place-items: center;
       @media (min-width: 992px) {
-        aspect-ratio: 13 / 12;
+        aspect-ratio: unset;
+        height: 415px;
       }
     }
 
