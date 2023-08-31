@@ -522,6 +522,9 @@
 #es-rc #es-rc-content .es-cross__table--left tbody {
   border: 3px solid white;
 }
+#es-rc #es-rc-content .es-cross .text-left--0 {
+  height: 80.3px;
+}
 #es-rc #es-rc-content .es-cross .text-left--1 {
   height: 44.8px;
 }
@@ -538,6 +541,9 @@
 #es-rc #es-rc-content .es-cross__bordered-1 tbody {
   border: 3px solid #a1bd39;
   border-radius: 10px;
+}
+#es-rc #es-rc-content .es-cross .header-row {
+  height: 80.3px;
 }
 #es-rc #es-rc-content .es-cross__bordered-2 tbody {
   border: 3px solid #71c7d6;
@@ -589,6 +595,7 @@
   font-size: clamp(22px, 12.88px + 2.532vw, 38px);
   color: #00604d;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 #es-rc #es-rc-content .es-articles__text1 {
   font-size: clamp(12px, 9.722px + 0.6329vw, 16px);

@@ -599,6 +599,9 @@ $fw-black: 900;
     &__table--left tbody {
       border: 3px solid white;
     }
+    .text-left--0 {
+      height: 80.3px;
+    }
     .text-left--1 {
       height: 44.8px;
       @media (min-width: 576px) {
@@ -614,8 +617,11 @@ $fw-black: 900;
         border: 3px solid $main-color;
         border-radius: 10px;
       }
+      
     }
-
+.header-row {
+        height: 80.3px;
+      }
     &__bordered-2 {
       & tbody {
         border: 3px solid #71c7d6;
@@ -679,6 +685,7 @@ $fw-black: 900;
       font-size: $fs-section-title;
       color: $main-color--2;
       text-transform: uppercase;
+      margin-bottom: 0;
     }
 
     &__text1 {
