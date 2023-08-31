@@ -583,9 +583,9 @@ $fw-black: 900;
     }
 
     &__emptyImage {
-      height: calc(170px + 0.5rem);
+      height: calc(170px + 1rem);
       @media (min-width: 992px) {
-        height: calc(220px + 0.5rem);
+        height: calc(220px + 1rem);
       }
     }
 
@@ -594,6 +594,19 @@ $fw-black: 900;
       margin: 0;
       border-color: transparent;
       font-size: $fs-base;
+    }
+
+    &__table--left tbody {
+      border: 3px solid white;
+    }
+    .text-left--1 {
+      height: 44.8px;
+      @media (min-width: 576px) {
+        height: 48.05px;
+      }
+      @media (min-width: 992px) {
+        height: 54.4px;
+      }
     }
 
     &__bordered-1 {
