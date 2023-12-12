@@ -94,6 +94,7 @@
 @media (min-width: 576px) {
   #es-rc #es-rc-content .es-kv__packshotCtn {
     width: 94%;
+    justify-content: space-around;
   }
 }
 @media (min-width: 768px) {
